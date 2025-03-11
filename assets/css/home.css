@@ -38,6 +38,7 @@ p{
     font-size: 15px;
     line-height: 100%;
     text-align: center;
+    transition: 0.3s;
 }
 .btn:hover{
     box-shadow: 0px 0px 33px 0px #FFCF014D;
@@ -116,7 +117,7 @@ p{
     color: #5D5D5D;
 }
 .word-documents-logo{
-    gap: 62px;
+    gap: 37px;
 }
 .word-doc{
     max-width: 387px;
@@ -158,8 +159,19 @@ p{
     margin-left: -10px;
     width: 62px;
 }
+.simplifies-users-count span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFff;
+
+}
 .simplifies-users-count p{
     color: #FFFFff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
 }
 .word-documents .btn{
     display: none;
@@ -643,13 +655,29 @@ p{
 }
 .how-works-box{
     gap: 20px;
+    position: relative;
 }
 .how-works-box span{
     color: #FFFFFF;
     font-weight: 400;
     font-size: 22px;
 }
-
+.how-works-box .btn{
+    position: absolute;
+    bottom: 69px;
+}
+@media (max-width: 1199px){
+    .how-works-box .btn {
+        height: 40px;
+        width: 170px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 1099px){
+    .how-works-box .btn {
+        bottom: 50px;
+    }
+}
 
 @media (max-width: 991px){
     .how-works-text p {
@@ -870,6 +898,14 @@ p{
     font-size: 15px;
     line-height: 100%;
     text-align: center;
+    transition: 0.3s;
+
+}
+.btn-liner:hover, .btn-liner:active{
+    box-shadow: 0px 0px 33px 0px #FFCF014D;
+    background: #FFCF01;
+    border: 1px solid #FFCF01;
+    color: #0C0C17;
 }
 @media (max-width: 991px){
     .functional-box p {
@@ -1315,7 +1351,7 @@ footer:after{
     position: absolute;
     bottom: 0;
     right: 0;
-    background-image: url("../img/footer-fon.png");
+    background-image: url("../img/footer-photo.png");
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 725px;
@@ -1404,9 +1440,7 @@ footer .menu-scroll a {
 }
 @media (max-width: 575px){
 
-    .word-desc{
-        display: none;
-    }
+
     .word-mob{
         display: block;
     }
@@ -1415,5 +1449,7 @@ footer .menu-scroll a {
         max-width: 234px;
         width: 100%
     }
-
+    footer:after{
+        background-image: url("../img/footer-fon.png");
+    }
 }
